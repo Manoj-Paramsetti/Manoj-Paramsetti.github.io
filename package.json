@@ -1,0 +1,23 @@
+{
+  "name": "Manoj-Paramsetti.github.io",
+  "version": "1.0.0",
+  "description": "Hey Floks!",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manoj-Paramsetti/Manoj-Paramsetti.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manoj-Paramsetti/Manoj-Paramsetti.github.io/issues"
+  },
+  "homepage": "https://github.com/Manoj-Paramsetti/Manoj-Paramsetti.github.io#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.4.0"
+  }
+}

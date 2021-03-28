@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" href="https://icons.getbootstrap.com/assets/icons/clouds.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Weather App - Paramsetti Manoj</title>
+  </head>
+
+  <body>
+    <section id = "Header">
+      <h1>WeatherApp</h1>
+    </section>
+    <section id = "search">
+      <input type="text" id="text" placeholder="Location..." id = "textbox"></input>
+      <button type="submit" id ="vButton" onclick="senData()"><img src="https://icons.getbootstrap.com/assets/icons/search.svg" alt=""></button>
+    </section>
+    <section id="error"></section>
+    <section id = "card">
+      <div id ="geo" onclick="Geolocation()"><b>Geolocation</b>
+        <button id="geo" id ="vButton">
+          <img src="https://icons.getbootstrap.com/assets/icons/triangle.svg" style="rotate: '180deg';" alt=""></img>
+        </button>
+      </div>
+      <section id="Geolocation"></section>
+      <br>
+      <div id ="geo" onclick="Temperature()"><b>Temperature</b>
+        <button id="expander">
+          <img src="https://icons.getbootstrap.com/assets/icons/triangle.svg" style="rotate: '180deg';" alt=""></img>
+        </button>
+      </div>
+      <section id="Temperature"></section>
+      <br>
+      <div id ="geo" onclick="Condition()"><b>Weather Condition</b>
+        <button id="expander">
+          <img src="https://icons.getbootstrap.com/assets/icons/triangle.svg" style="rotate: '180deg';" alt=""></img>
+        </button>
+      </div>
+      <section id="Condition"></section>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
+
+</html>

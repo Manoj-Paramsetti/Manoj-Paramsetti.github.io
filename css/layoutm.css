@@ -1,0 +1,115 @@
+body{
+  background-color: #DDDDDD;
+  width: 100%;
+  overflow-x: hidden; 
+}
+.avatar {
+	display: inline;
+	overflow: hidden;
+	line-height: 1;
+	float: left;
+	vertical-align: middle;
+	background-color: var(--color-avatar-bg);
+	border-radius: 6px;
+	box-shadow: 0 0 0 1px var(--color-avatar-border);
+}
+.avatar-user {
+	display: inline;
+	border-radius: 50% !important;
+}
+.header{
+    box-sizing: border-box;
+    color: var(--black-700);
+    font-size: 14px;
+    z-index:999;
+    background-color: var(--white);
+    box-shadow: var(--bs-sm);
+    background-color: #FFFFFF;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06);
+    border-radius:0px 0px 8px 8px;
+    width: 100%;
+    margin: -.67em;
+    position: fixed;
+}
+.lefthead{
+	padding-top: 10px;
+padding-left: 15px;
+font-family: 'Open Sans', sans-serif;
+align-items: center;
+justify-content: center;
+display: flex;
+text-align:center;
+float:left;
+}
+.righthead{
+  float:right;
+  align-items: center;
+  justify-content: center;
+  padding-right: 5px;
+  padding-top: 7px;
+}
+.welcome{
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient( rgba(0,0,0,.8), rgba(0,0,0,.5) ),url('https://wallpaperaccess.com/full/2820590.jpg');
+  width: 100%;
+  height:40vh;
+  color: #ffffff;
+  margin-left: -10px;
+  line-height: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  vertical-align: middle;
+}
+.upAnchor{
+  top: 2;
+  position: static;
+}
+.downAnchor{
+  position: absolute;
+  bottom: 20px;
+  width: 100vw;
+  text-align: center;
+  font-size: auto;
+}
+.aboutMe{
+  position: relative;
+  text-align: left;
+  margin-top: -10px;
+  background-image: linear-gradient( rgba(0,0,0,.0), rgba(0,0,0,.8) ),
+  url('https://i.pinimg.com/originals/61/db/34/61db349af8934bca9bf571fcd5571e1f.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  color: #ffffff;
+  margin-left: -10px;
+  line-height: 8px;
+  font-family: 'Open Sans', sans-serif;
+  vertical-align: middle;
+}
+.ContMe{
+
+  position: relative;
+
+  background-color: #ffffff;
+
+  height:20vh;
+
+  
+
+  margin: -.65em;
+
+  width:100vw;
+
+}
+  a{
+
+    color:black;
+
+  }
+

@@ -1,0 +1,308 @@
+$black : #121212
+@mixin font
+    font-family: 'Poppins', sans-serif
+    font-size: 16.5px
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    -ms-overflow-style: none
+    scrollbar-width: none
+    //scroll-behavior: smooth
+body::-webkit-scrollbar 
+    display: none
+
+Heading
+    font-size: 33px
+    font-family: "Montserrat"
+    font-weight: 700
+    color: #212121
+    text-align: auto
+Heading1
+    font-family: "Montserrat"
+    font-weight: 900
+    font-size: 33px
+    color: #FF8989
+    text-align: auto
+#Heading2
+    font-size: 18px
+    color: #212121
+Heading3
+    font-size: 14px
+    color: #212121
+Heading4
+     font-size: 12px
+     color: #212121
+@mixin shadow()
+    box-shadow: 0 0 2.8px 2.2px rgba(0, 0, 0, 0.034),0 0 6.7px 5.3px rgba(0, 0, 0, 0.048),0 0 12.5px 10px rgba(0, 0, 0, 0.06)
+body
+    background: #FFF
+    width: 100%
+    height: auto
+    overflow-x: hidden
+    color: black
+    display: relative
+    box-sizing: border-box
+    @include font()
+    overflow-y: scroll
+    -ms-overflow-style: none
+    scrollbar-width: none
+#NavBar
+    left: 0
+    top: 0
+    height: auto
+    width: 100%
+    z-index: 99
+    position: fixed
+    display: flex
+    padding: 28px
+    justify-content: space-between
+    padding-left: 50px
+    padding-bottom: 18px
+    overflow-x: hidden
+    color: #444
+    background-color:  #FFF
+    &__Left__Part
+        width: 370px
+        display: flex
+        justify-content: space-between
+    &__Right__Part
+        width: 70px
+        display: flex
+        font-weight: 900
+        height: 100%
+        justify-content: space-between
+        user-select: none
+    #linkedin
+        margin-right: 10px
+    #github
+        margin-top: -3px 
+    ul 
+        list-style: none
+        display: flex
+        width: 100%
+        justify-content: space-between
+    a
+        color: #444444
+        font-style: none
+        text-decoration: none
+    a:hover
+        color: #FF4545
+#Home
+    padding: 50px
+    padding-top: 0px
+    animation: 1s zoom 1 alternate
+    //background: url("https://wallpapercave.com/wp/wp6751611.jpg")
+    //background-size: cover
+    display: flex
+    &__Box
+        display: relative
+    &__Left__Part
+        width: 60%
+        margin-left: 20%
+        margin-right: 20%
+        text-align: center
+        float: left
+    &__Right__Part
+        display: flex
+        width: 100%
+        align-items: center
+        font-weight: 900 
+        justify-content: space-between
+        user-select: none
+    #img
+        background: url("https://avatars.githubusercontent.com/u/39455174?s=460&u=e9f5cb2f91f075ed2d21a194c012a73732a35b73&v=4")
+        background-size: cover
+        width: 200px
+        height: 200px
+        margin: 0 auto
+        border-radius: 100%
+        
+@keyframes zoom
+    0%
+        transform: translateY(200px) scale(0.5)
+    100%
+
+        transform: translateY(0px) scale(1)
+
+#Education
+    position: relative
+    padding: 50px
+    text-align: center
+    animation: 1s zoom 1 alternate
+#Projects
+    display: grid
+    margin: 0 auto
+    grid-column-gap: 0px
+    grid-row-gap: 100px
+    margin-bottom: 50px
+    grid-template-columns: auto auto auto
+    animation: 1s zoom 1 alternate
+    a
+        text-decoration: none
+        color: #ff5454
+    a:hover
+        padding: 2px
+        background: #ff5454
+    #card        
+        margin: 0 auto
+        min-height: 400px
+        padding: 4px
+        text-align: center
+        background: inherit// rgba(0, 0, 0, 0)
+        //border: 0.5px solid black
+        border-radius: 10px
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.4)
+        width: 300px
+    .hovercard
+        display: flex
+        height: 200px
+        overflow: hidden
+        background: inherit
+        border-radius: 10px 10px 0px 0px
+    .hovercard img 
+        transition: transform 0.5s linear
+    .hovercard:hover img
+        transform: scale(1.1)
+    
+#DarkMode1
+    position: fixed
+    bottom: 0
+    right: 0
+    margin: 30px
+    margin-bottom: 80px 
+    width: 40px
+    height: 40px
+    padding: 5px
+    border-radius: 40px 
+    background: #FFF
+    #CommImg
+        width: 26px
+        background: url("https://icons.getbootstrap.com/assets/icons/person-lines-fill.svg")
+        background-size: cover
+        height: 24px
+#DarkMode
+    position: fixed
+    bottom: 0
+    right: 0
+    margin: 30px 
+    width: 40px
+    height: 40px
+    padding: 2px
+    border-radius: 40px 
+    background: #121212 
+    &Img
+        width: 38px
+        background: url("https://freesvg.org/img/moon-and-stars.png")
+        background-size: cover 
+        height: 36px
+#aboutme
+    position: fixed
+    z-index: 6
+    width: 100vw
+    height: 100vh
+    //display: flex
+    display: none
+    //position: fixed
+    //top: 0
+    color: #212121
+    justify-content: center
+    align-items: center
+    background: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(0,0,0,0.8))
+    animation-delay: 11s
+    button
+        border: none
+        outline:none
+        background: #FF4444
+        color: #FFF
+        font-family: "Poppins"
+        font-size: 14px
+        cursor: pointer
+        border-radius: 8px
+        padding: 6px
+        padding-top: 3px
+        padding-bottom: 3px
+        border: 3px solid #FFF
+    button:hover
+        background: rgba(255, 44, 44, 0.8)
+        border: 2px solid #FF5454
+        outline: 0px
+    a
+        color: #FFF
+        text-decoration-line: none
+        font-weight: bolder
+        height: 70px
+        width: 22px
+        margin: 5px
+        padding: 5px
+        border-radius: 5px
+    padding: 40px
+    .sub-container
+        width: auto
+        height: auto
+        border-radius: 5px
+        margin-left: auto
+        margin-right: auto
+        padding: 20px
+        margin-top: 4vh
+        margin-bottom: 6vh
+        background: #FFF
+        overflow-y: hidden
+    .sub-container-1
+        height: 100%
+        overflow-y: auto
+        padding-right: 20px
+        margin-bottom: 20px 
+        button
+            margin: 4px
+            width: 120px
+    .close
+        font-family: "Montserrat"
+        font-weight: 100
+        display: flex
+        justify-content: space-between
+        height: auto
+@media screen and ( max-width: 650px )
+    #NavBar
+        padding: 5px
+        padding-top: 20px
+        padding-bottom: 10px
+        &__Left__Part
+            width: 350px
+            margin-right: 30px
+    #Projects
+        grid-template-columns: auto
+    #Home
+        &__Left__Part
+            float: none
+            margin: 0
+        &__Right__Part
+            float: none
+            display: flexbox
+            width: 100%
+            align-content: center
+@media screen and ( max-width:  930px)
+    #Projects
+        grid-template-columns: auto            
+    #Home
+        &__Left__Part
+            float: none
+            margin: 0
+            width: calc( 100vw - 100px )
+        &__Right__Part
+            float: none
+            display: flexbox
+            width: 100%
+            align-content: center
+    .sub-container
+        width: 50vw
+    .sub-container-1
+        overflow-x: auto
+        width: 100%
+        padding: 0px
+        margin-right: auto
+        margin-left: auto
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center
