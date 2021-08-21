@@ -11,6 +11,31 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.New{
+  position: fixed;
+  margin-top: 90px;
+  padding: 10px;
+  margin-left: 5px;
+  background: #EEE;
+  border-radius: 10px;
+  z-index: 999;
+  font-family: "Montserrat";
+  color: #333;
+  text-align: center;
+}
+
+.New button{
+  background: #3498db;
+  outline: none; border: none;
+  font-family: "Poppins";
+  margin-top: 5px;
+  padding: 5px;
+  color: white;
+  border-radius: 3px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
 Heading {
   font-size: 33px;
   color: #FFF;
